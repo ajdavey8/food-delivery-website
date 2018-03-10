@@ -138,7 +138,8 @@ a:active {
 /* ====== Buttons ====== */
 
 .button:link,
-.button:visited {
+.button:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -148,7 +149,8 @@ a:active {
 }
 
 .button-full:link,
-.button-full:visited {
+.button-full:visited,
+input[type=submit]  {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
@@ -162,12 +164,16 @@ a:active {
 }
 
 .button:hover,
-.button:active {
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: #cf6d17;
 }
 
 .button-full:hover,
-.button-full:active {
+.button-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   border: 1px solid #cf6d17;
 }
 
@@ -439,5 +445,27 @@ cite img {
 
 .plan-box ul li {
   padding: 5px 0;
-
 }
+
+/* ================ CONTACT US - FORM ================ */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  color: inherit;
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+/*Remove blue highlight line chrome adds when box selcted*/
+*:focus {outline: none;}
